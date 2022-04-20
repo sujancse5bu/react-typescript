@@ -25,7 +25,7 @@ export const searchRepositories = (term: string) => {
         type: ActionType.SEARCH_REPOSITORIES_SUCCESS,
         payload: names,
       })
-    } catch (err) {
+    } catch (err: any) {
       dispatch({
         type: ActionType.SEARCH_REPOSITORIES_ERROR,
         payload: err.message,
